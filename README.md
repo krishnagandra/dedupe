@@ -9,9 +9,9 @@ kafka-topics --create --topic sensor-data-incoming  --bootstrap-server localhost
 kafka-topics --create --topic sensor-data-out  --bootstrap-server localhost:9092
 
 
-Assuming kafka running on localhost:9092, otherwise change the url in App.java.
+assuming kafka running on localhost:9092, otherwise change the url in App.java.
 
-We can directly run the app in intellij or if flink you have flink running outside use below url to run it.
+We can directly run the app in intellij or if you have flink running outside use below url to run it on cluster.
 
 flink run -c com.pipelineworks.stream.App  "path to dedupe-1.0-SNAPSHOT.jar"
 
