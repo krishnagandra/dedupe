@@ -5,6 +5,7 @@ Check blog post to understand more on deduplication. https://medium.com/@krishna
 To run this application, create two topics in Kafka, one topic to push duplicate data and other one to push data after deduplication.
 
 kafka-topics --create --topic sensor-data-incoming  --bootstrap-server localhost:9092
+
 kafka-topics --create --topic sensor-data-out  --bootstrap-server localhost:9092
 
 
