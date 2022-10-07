@@ -11,7 +11,6 @@ kafka-topics --create --topic sensor-data-out  --bootstrap-server localhost:9092
 Sample data:
 
 time,power,temp,humidity,light,CO2,dust
-
 "2015-08-01 00:00:28",0,32,40,0,973,27.8
 "2015-08-01 00:00:58",0,32,40,0,973,27.09
 "2015-08-01 00:01:28",0,32,40,0,973,34.5
