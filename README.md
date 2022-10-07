@@ -9,7 +9,9 @@ kafka-topics --create --topic sensor-data-incoming  --bootstrap-server localhost
 kafka-topics --create --topic sensor-data-out  --bootstrap-server localhost:9092
 
 Sample data:
+
 time,power,temp,humidity,light,CO2,dust
+
 "2015-08-01 00:00:28",0,32,40,0,973,27.8
 "2015-08-01 00:00:58",0,32,40,0,973,27.09
 "2015-08-01 00:01:28",0,32,40,0,973,34.5
@@ -21,6 +23,7 @@ time,power,temp,humidity,light,CO2,dust
 "2015-08-01 00:04:29",0,32,40,0,973,11.67
 
 Created composite key to remove records which has  same (humidity, temp, CO2,light) .
+
 {"time":"2015-08-01 00:02:28","power":"0","temp":"32","humidity":"40","light":"0","dust":"27.58","compositeKey":"32:40:973:0","co2":"973"}
 {"time":"2015-08-01 00:02:59","power":"0","temp":"32","humidity":"40","light":"0","dust":"29.35","compositeKey":"32:40:971:0","co2":"971"}
 
