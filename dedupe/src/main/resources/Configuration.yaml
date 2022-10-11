@@ -1,0 +1,4 @@
+inputTopic: sensor-data-incoming
+outputTopic: sensor-data-out
+consumerGroup: consumer-group1
+bootstrapServers: localhost:9092
